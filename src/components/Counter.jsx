@@ -4,12 +4,12 @@ function Counter() {
    const [arr, setArr] = useState([])
 
    function addPlus() {
-    setArr(prevValue => [ ...prevArr, "+"])
+    setArr(["+"])
    }
 
 
    function addMinus() {
-    setArr(prevValue => [ ...prevArr, "-"])
+    setArr(["-"])
    }
 
     return (

@@ -6,8 +6,7 @@ import React, { useState } from 'react'
 import Counter from "./components/Counter.jsx"
 
 function App() {
-  return <Counter />
- const [showModal, setShowModal] = useState(false)
+   const [showModal, setShowModal] = useState(false)
   
   return (
     <div>
