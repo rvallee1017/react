@@ -1,21 +1,25 @@
 import React, { useState } from 'react'
 
 function Counter() {
-    const [counter, setConter] = useState(0)
-    function incrementCounter() {
-        setCounter(() => counter + 1)
-    }
+   const [arr, setArr] = useState([])
 
-    function decrementCounter() {
-        setCounter(counter - 1)
-    }
+   function addPlus() {
+    setArr(prevValue => [ ...prevArr, "+"])
+   }
+
+
+   function addMinus() {
+    setArr(prevValue => [ ...prevArr, "-"])
+   }
+
     return (
         <div>
-            <button onClick={decrementCounter}>-</button>
-            {counter}
-            <button onClick={incrementCounter}>+</button>
+            <button onClick={addMinus}>-</button>
+            <button onClick={addPlus}>+</button>
+            {arr.toString()}
         </div>
     )
 }
 
 export default Counter
+
